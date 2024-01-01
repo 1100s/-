@@ -26,12 +26,13 @@
             justify-content: center;
             position: relative;
             padding: 10px;
+            cursor: url('path/to/your-custom-cursor.png'), auto;
         }
 
         #ascii-art {
             font-family: monospace;
-            font-size: 16px; /* Increase font size for larger ASCII art */
-            margin-bottom: -10px; /* Adjust negative margin to bring closer */
+            font-size: 16px;
+            margin-bottom: -10px;
             background-size: 200% 100%;
             background-image: linear-gradient(to right, #B2AC88, #B2AC88);
             -webkit-background-clip: text;
@@ -40,7 +41,7 @@
         }
 
         #ip-info {
-            font-size: 14px; /* Adjust font size for smaller screens */
+            font-size: 14px;
             font-weight: bold;
             opacity: 0;
             animation: fadeIn 2s ease-in-out forwards;
@@ -71,7 +72,7 @@
         .colorful-city,
         .welcome-text {
             color: #B2AC88;
-            font-size: 12px; /* Adjust font size for smaller screens */
+            font-size: 12px;
             margin-bottom: -5px;
             animation: fadeIn 2s ease-in-out forwards;
         }
