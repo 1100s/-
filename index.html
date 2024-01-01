@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>‎</title>
+    <title>‎ </title>
+    <link rel="icon" href="ico.ico" type="image/x-icon">
     <style>
         html,
         body {
             height: 100%;
             margin: 0;
             overflow: hidden;
-            touch-action: none; /* Prevent touch events */
-            user-select: none; /* Prevent text selection */
+            touch-action: none;
+            user-select: none;
         }
 
         body {
@@ -26,7 +27,6 @@
             justify-content: center;
             position: relative;
             padding: 10px;
-            cursor: url('path/to/your-custom-cursor.png'), auto;
         }
 
         #ascii-art {
@@ -91,8 +91,7 @@
         }
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
-    
-    <!-- Add the script to disable right-click -->
+
     <script>
         document.addEventListener('contextmenu', event => event.preventDefault());
     </script>
@@ -100,20 +99,19 @@
 
 <body>
     <pre id="ascii-art">
-▄████  █▄▄▄▄ ██     ▄   ██▄   ▄█    ▄     ▄▀     ▄█▄    █       ▄   ███   
-█▀   ▀ █  ▄▀ █ █     █  █  █  ██     █  ▄▀       █▀ ▀▄  █        █  █  █  
-█▀▀    █▀▀▌  █▄▄█ █   █ █   █ ██ ██   █ █ ▀▄     █   ▀  █     █   █ █ ▀ ▄ 
-█      █  █  █  █ █   █ █  █  ▐█ █ █  █ █   █    █▄  ▄▀ ███▄  █   █ █  ▄▀ 
- █       █      █ █▄ ▄█ ███▀   ▐ █  █ █  ███  ██ ▀███▀      ▀ █▄ ▄█ ███   
-  ▀     ▀      █   ▀▀▀           █   ██                        ▀▀▀        
-              ▀                                                           
+        ▄████  █▄▄▄▄ ██     ▄   ██▄   ▄█    ▄     ▄▀     ▄█▄    █       ▄   ███   
+        █▀   ▀ █  ▄▀ █ █     █  █  █  ██     █  ▄▀       █▀ ▀▄  █        █  █  █  
+        █▀▀    █▀▀▌  █▄▄█ █   █ █   █ ██ ██   █ █ ▀▄     █   ▀  █     █   █ █ ▀ ▄ 
+        █      █  █  █  █ █   █ █  █  ▐█ █ █  █ █   █    █▄  ▄▀ ███▄  █   █ █  ▄▀ 
+         █       █      █ █▄ ▄█ ███▀   ▐ █  █ █  ███  ██ ▀███▀      ▀ █▄ ▄█ ███   
+          ▀     ▀      █   ▀▀▀           █   ██                        ▀▀▀        
+                      ▀       
     </pre>
 
     <p id="ip-info"> </p>
     <button class="custom-button">Sample Button</button>
 
     <script>
-        // Immediately fetch and display the IP address
         fetch('https://api64.ipify.org?format=json')
             .then(response => response.json())
             .then(data => {
